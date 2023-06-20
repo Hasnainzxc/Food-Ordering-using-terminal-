@@ -12,7 +12,7 @@ def get_dubai_restaurants():
         response = requests.get(f"{base_url}/restaurant", params={"city": "Dubai"})
         response.raise_for_status()
 
-        # Extract restaurant names and menus from the response
+        # Extract restaurant names and menus from the respons
         restaurants = response.json()
         return restaurants
     except requests.exceptions.RequestException as error:
