@@ -6,18 +6,18 @@ base_url = 'https://api.talabat.com/api/v1'
 base_url = 'https://api.talabat.com/api/v1'
 
 # Function to get all restaurants and menus in Dubai
-def get_dubai_restaurants():
-    try:
-        # Make GET request to Talabat API to fetch all restaurants in Dubai
-        response = requests.get(f"{base_url}/restaurant", params={"city": "Dubai"})
-        response.raise_for_status()
+# def get_dubai_restaurants():
+#     try:
+#         # Make GET request to Talabat API to fetch all restaurants in Dubai
+#         response = requests.get(f"{base_url}/restaurant", params={"city": "Dubai"})
+#         response.raise_for_status()
 
-        # Extract restaurant names and menus from the response
-        restaurants = response.json()
-        return restaurants
-    except requests.exceptions.RequestException as error:
-        print(f"Error fetching Dubai restaurants: {error}")
-        return []
+#         # Extract restaurant names and menus from the response
+#         restaurants = response.json()
+#         return restaurants
+#     except requests.exceptions.RequestException as error:
+#         print(f"Error fetching Dubai restaurants: {error}")
+#         return []
 
 # Function to place an order
 # (same as before)
