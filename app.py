@@ -97,16 +97,7 @@ if selected_item.isnumeric() and int(selected_item) <= len(restaurants):
     print(f"Confirming order: {selected_menu_item['name']} from {selected_restaurant['name']}")
     confirmation = input("Confirm the order (yes/no): ")
 
-    if confirmation.lower() == "yes":
-        # Create the order payload
-        order_info = {
-            "restaurant": selected_restaurant['name'],
-            "orderID": selected_menu_item['id'],
-            "orderPrice": selected_menu_item['price'],
-            "orderStatus": "Preparing",
-            "riderName": "",
-            "riderNumber": ""
-        }
+   
 
         # Place the order
         place_order(order_info)
